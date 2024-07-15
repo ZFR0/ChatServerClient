@@ -96,7 +96,8 @@ else:
     # La parte seguente contiene i messaggi.
     msg_list = tkt.Listbox(messages_frame, height=15, width=100, yscrollcommand=scrollbar.set)
 
-    msg_list.configure(bg='black', fg='white', font=('Courier New', 12))  # Configurazione personalizzata
+    # Font e colori di background personalizzati
+    msg_list.configure(bg='black', fg='white', font=('Courier New', 12))
 
     scrollbar.pack(side=tkt.RIGHT, fill=tkt.Y)
     msg_list.pack(side=tkt.LEFT, fill=tkt.BOTH)
